@@ -1,8 +1,8 @@
-const five = require('johnny-five');
+const five = require('johnny-five');  //for js
 const board = new five.Board();
 const SerialPort = require('serialport');
 
-const port = new SerialPort('<YOUR_SERIAL_PORT>', {
+const port = new SerialPort('<1997>', {
   baudRate: 9600
 });
 
