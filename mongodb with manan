@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Medical Practitioner</title>
+</head>
+<body>
+	<!-- Heading -->
+	<h1>Add Medical Practitioner</h1>
+
+	<!-- Form to add medical practitioner -->
+	<form action="add_practitioner.php" method="POST">
+		<!-- Input fields for name -->
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+
+		<!-- Input fields for specialization -->
+		<label for="specialization">Specialization:</label>
+		<input type="text" id="specialization" name="specialization"><br><br>
+
+		<!-- Input fields for availability -->
+		<label for="availability">Availability:</label>
+		<input type="text" id="availability" name="availability"><br><br>
+
+		<!-- Input fields for location -->
+		<label for="location">Location:</label>
+		<input type="text" id="location" name="location"><br><br>
+
+		<!-- Button to submit the form -->
+		<input type="submit" value="Add Practitioner">
+	</form>
+</body>
+</html>
+
+
+
+
+
