@@ -1,0 +1,15 @@
+import paho.mqtt.client as mqtt
+import random
+import time
+
+broker_address = "localhost"  # replace with your MQTT broker address
+client = mqtt.Client()
+
+client.connect(broker_address)
+
+while True:
+    # Simulate heart rate measurement
+    heart_rate = random.randint(60, 100)
+    # Publish heart rate data to topic "health/heart_rate"
+    client.publish("health/heart_rate", heart_rate)
+    time.sleep(5)  # Wait for 5 seconds before sending the next measurement
